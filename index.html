@@ -31,7 +31,6 @@
     overflow-x: hidden;
   }
 
-  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -54,11 +53,7 @@
     text-transform: uppercase;
   }
 
-  .nav-links {
-    display: flex;
-    gap: 48px;
-    list-style: none;
-  }
+  .nav-links { display: flex; gap: 48px; list-style: none; }
 
   .nav-links a {
     color: var(--text-muted);
@@ -71,7 +66,6 @@
 
   .nav-links a:hover { color: var(--gold); }
 
-  /* HERO */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -97,7 +91,7 @@
     transform: translateY(-50%);
     width: 340px;
     height: 340px;
-    opacity: 0.1;
+    opacity: 0.12;
     animation: spin 50s linear infinite;
   }
 
@@ -108,17 +102,12 @@
 
   .hero-line-left {
     position: absolute;
-    left: 60px;
-    top: 0; bottom: 0;
+    left: 60px; top: 0; bottom: 0;
     width: 1px;
     background: linear-gradient(to bottom, transparent, var(--line) 30%, var(--line) 70%, transparent);
   }
 
-  .hero-content {
-    max-width: 860px;
-    position: relative;
-    z-index: 1;
-  }
+  .hero-content { max-width: 860px; position: relative; z-index: 1; }
 
   .hero-eyebrow {
     font-size: 0.7rem;
@@ -141,14 +130,10 @@
     animation: fadeUp 0.8s 0.4s forwards;
   }
 
-  .hero-title em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
+  .hero-title em { font-style: italic; color: var(--gold-light); }
 
   .hero-divider {
-    width: 60px;
-    height: 1px;
+    width: 60px; height: 1px;
     background: linear-gradient(to right, var(--gold), transparent);
     margin: 36px 0;
     opacity: 0;
@@ -164,7 +149,6 @@
     animation: fadeUp 0.8s 0.6s forwards;
   }
 
-  /* SECTIONS */
   section {
     padding: 120px 60px;
     max-width: 1200px;
@@ -194,19 +178,9 @@
     margin: 0 auto;
   }
 
-  /* WHO WE ARE */
-  .who-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
+  .who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
 
-  .who-text p {
-    color: var(--text-muted);
-    margin-bottom: 20px;
-    font-size: 0.95rem;
-  }
+  .who-text p { color: var(--text-muted); margin-bottom: 20px; font-size: 0.95rem; }
 
   .who-statement {
     border-left: 2px solid var(--gold);
@@ -224,7 +198,6 @@
     line-height: 1.65;
   }
 
-  /* SERVICES */
   .services-full {
     background: var(--purple-2);
     padding: 120px 0;
@@ -269,7 +242,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 3.2rem;
     font-weight: 300;
-    color: rgba(201,168,76,0.15);
+    color: rgba(201,168,76,0.18);
     line-height: 1;
     margin-bottom: 24px;
   }
@@ -282,15 +255,11 @@
     color: var(--text);
   }
 
-  .service-list {
-    list-style: none;
-    color: var(--text-muted);
-    font-size: 0.84rem;
-  }
+  .service-list { list-style: none; color: var(--text-muted); font-size: 0.84rem; }
 
   .service-list li {
     padding: 8px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
     display: flex;
     align-items: center;
     gap: 12px;
@@ -298,13 +267,11 @@
 
   .service-list li::before {
     content: '';
-    width: 16px;
-    height: 1px;
+    width: 16px; height: 1px;
     background: var(--gold);
     flex-shrink: 0;
   }
 
-  /* APPROACH */
   .approach-section {
     background: var(--purple-3);
     padding: 120px 0;
@@ -333,8 +300,7 @@
   .approach-item:hover { background: rgba(201,168,76,0.05); }
 
   .approach-icon {
-    width: 44px;
-    height: 44px;
+    width: 44px; height: 44px;
     border: 1px solid rgba(201,168,76,0.35);
     border-radius: 50%;
     margin: 0 auto 18px;
@@ -361,7 +327,6 @@
     font-style: italic;
   }
 
-  /* CONTACT */
   .contact-section {
     background: var(--purple-2);
     border-top: 1px solid var(--line);
@@ -387,22 +352,13 @@
     margin-bottom: 6px;
   }
 
-  .contact-detail-value {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-  }
+  .contact-detail-value { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
 
-  .contact-detail-value a {
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
+  .contact-detail-value a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
   .contact-detail-value a:hover { color: var(--gold); }
 
   .contact-cta {
-    background: linear-gradient(135deg, rgba(75,42,122,0.35), rgba(201,168,76,0.07));
+    background: linear-gradient(135deg, rgba(123,47,190,0.3), rgba(201,168,76,0.07));
     border: 1px solid var(--line);
     padding: 52px;
   }
@@ -428,12 +384,8 @@
     transition: all 0.3s;
   }
 
-  .contact-cta a:hover {
-    background: var(--gold);
-    color: var(--purple);
-  }
+  .contact-cta a:hover { background: var(--gold); color: var(--purple); }
 
-  /* FOOTER */
   footer {
     border-top: 1px solid var(--line);
     padding: 32px 60px;
@@ -453,7 +405,6 @@
     text-transform: uppercase;
   }
 
-  /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -465,12 +416,8 @@
     transition: opacity 0.7s ease, transform 0.7s ease;
   }
 
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* MOBILE */
   @media (max-width: 900px) {
     nav { padding: 22px 24px; }
     .nav-links { display: none; }
@@ -485,14 +432,12 @@
     .contact-inner { grid-template-columns: 1fr; gap: 48px; }
     .contact-section { padding: 80px 24px; }
     footer { padding: 28px 24px; flex-direction: column; gap: 10px; text-align: center; }
-    .services-full > .inner,
-    .approach-section > .inner { padding: 0 24px; }
+    .services-full > .inner, .approach-section > .inner { padding: 0 24px; }
   }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">Phoenix Capital</div>
   <ul class="nav-links">
@@ -503,7 +448,6 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-bg"></div>
   <div class="hero-line-left"></div>
@@ -517,7 +461,6 @@
     <line x1="50" y1="50" x2="290" y2="290" stroke="#C9A84C" stroke-width="0.3"/>
     <line x1="290" y1="50" x2="50" y2="290" stroke="#C9A84C" stroke-width="0.3"/>
   </svg>
-
   <div class="hero-content">
     <p class="hero-eyebrow">phoenixcapital.ltd &nbsp;·&nbsp; Maadi, Cairo &nbsp;·&nbsp; Digital Financial & Business Solutions</p>
     <h1 class="hero-title">Phoenix<br><em>Capital</em></h1>
@@ -526,7 +469,6 @@
   </div>
 </div>
 
-<!-- WHO WE ARE -->
 <section id="about">
   <div class="who-grid">
     <div>
@@ -544,7 +486,6 @@
 
 <hr class="section-hr">
 
-<!-- SERVICES -->
 <div class="services-full" id="services">
   <div class="inner">
     <p class="section-label">Our Services</p>
@@ -568,17 +509,17 @@
           <li>Market-aligned vehicle price benchmarks</li>
           <li>Model-based price guidance</li>
           <li>Structured valuation reference</li>
-          <li>Underwriting & credit evaluation support</li>
+          <li>Underwriting &amp; credit evaluation support</li>
           <li>Standardized pricing visibility</li>
         </ul>
       </div>
       <div class="service-card reveal">
         <div class="service-num">03</div>
-        <div class="service-title">Business & Institutional Consulting</div>
+        <div class="service-title">Business &amp; Institutional Consulting</div>
         <ul class="service-list">
           <li>Digital process optimization</li>
           <li>Financial workflow structuring</li>
-          <li>Data organization & reporting</li>
+          <li>Data organization &amp; reporting</li>
           <li>Institutional performance enhancement</li>
         </ul>
       </div>
@@ -586,7 +527,6 @@
   </div>
 </div>
 
-<!-- APPROACH -->
 <div class="approach-section" id="approach">
   <div class="inner">
     <p class="section-label">Our Approach</p>
@@ -627,7 +567,6 @@
   </div>
 </div>
 
-<!-- CONTACT -->
 <div class="contact-section" id="contact">
   <div class="contact-inner">
     <div>
@@ -643,25 +582,34 @@
       </div>
       <div class="contact-detail reveal">
         <div class="contact-detail-label">General Inquiries</div>
-        <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection#acc5c2cac3ecdcc4c3c9c2c5d4cfcddcc5d8cdc082c0d8c8"><span class="__cf_email__" data-cfemail="452c2b232a05352d2a202b2c3d2624352c3124296b293121">[email&#160;protected]</span></a></div>
+        <div class="contact-detail-value"><a href="mailto:info@phoenixcapital.ltd">info@phoenixcapital.ltd</a></div>
       </div>
       <div class="contact-detail reveal">
-        <div class="contact-detail-label">Institutional Access & Platform Inquiries</div>
-        <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection#fe8e9f8c8a909b8c8d96978e8dbe8e96919b9097869d9f8e978a9f92d0928a9a"><span class="__cf_email__" data-cfemail="12627360667c7760617a7b626152627a7d777c7b6a7173627b66737e3c7e6676">[email&#160;protected]</span></a></div>
+        <div class="contact-detail-label">Institutional Access &amp; Platform Inquiries</div>
+        <div class="contact-detail-value"><a href="mailto:partnerships@phoenixcapital.ltd">partnerships@phoenixcapital.ltd</a></div>
       </div>
     </div>
     <div class="contact-cta reveal">
       <p>For institutional access or platform inquiries, reach out to our partnerships team directly.</p>
-      <a href="/cdn-cgi/l/email-protection#6919081b1d070c1b1a0100191a291901060c0700110a0819001d080547051d0d">Request Access</a>
+      <a href="mailto:partnerships@phoenixcapital.ltd">Request Access</a>
     </div>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-logo">Phoenix Capital</div>
-  <p>© 2025 Phoenix Capital. Maadi, Cairo, Egypt. All rights reserved.</p>
+  <p>&#169; 2025 Phoenix Capital. Maadi, Cairo, Egypt. All rights reserved.</p>
 </footer>
 
-<script data-cfasync
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+</script>
 
+</body>
+</html>

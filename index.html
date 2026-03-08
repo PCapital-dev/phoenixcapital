@@ -10,13 +10,13 @@
     --gold: #C9A84C;
     --gold-light: #E2C97E;
     --gold-dim: rgba(201,168,76,0.12);
-    --purple: #130826;
-    --purple-2: #1A0E30;
-    --purple-3: #22143C;
-    --purple-mid: #4B2A7A;
-    --text: #F0EAF8;
-    --text-muted: #9080A8;
-    --line: rgba(201,168,76,0.18);
+    --purple: #4B0082;
+    --purple-2: #3D006B;
+    --purple-3: #560094;
+    --purple-mid: #7B2FBE;
+    --text: #F5F0FF;
+    --text-muted: #C4A8E0;
+    --line: rgba(201,168,76,0.25);
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 26px 60px;
-    background: rgba(15,6,30,0.9);
+    background: rgba(60,0,100,0.92);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--line);
   }
@@ -85,9 +85,9 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 70% 60% at 85% 40%, rgba(100,50,200,0.22) 0%, transparent 65%),
-      radial-gradient(ellipse 50% 50% at 10% 80%, rgba(201,168,76,0.06) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 40% at 50% 5%, rgba(75,42,122,0.28) 0%, transparent 55%);
+      radial-gradient(ellipse 70% 60% at 85% 40%, rgba(140,0,255,0.2) 0%, transparent 65%),
+      radial-gradient(ellipse 50% 50% at 10% 80%, rgba(201,168,76,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 40% at 50% 5%, rgba(120,0,200,0.25) 0%, transparent 55%);
   }
 
   .hero-deco {
@@ -643,16 +643,16 @@
       </div>
       <div class="contact-detail reveal">
         <div class="contact-detail-label">General Inquiries</div>
-        <div class="contact-detail-value"><a href="mailto:info@phoenixcapital.ltd">info@phoenixcapital.ltd</a></div>
+        <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection#acc5c2cac3ecdcc4c3c9c2c5d4cfcddcc5d8cdc082c0d8c8"><span class="__cf_email__" data-cfemail="452c2b232a05352d2a202b2c3d2624352c3124296b293121">[email&#160;protected]</span></a></div>
       </div>
       <div class="contact-detail reveal">
         <div class="contact-detail-label">Institutional Access & Platform Inquiries</div>
-        <div class="contact-detail-value"><a href="mailto:partnerships@phoenixcapital.ltd">partnerships@phoenixcapital.ltd</a></div>
+        <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection#fe8e9f8c8a909b8c8d96978e8dbe8e96919b9097869d9f8e978a9f92d0928a9a"><span class="__cf_email__" data-cfemail="12627360667c7760617a7b626152627a7d777c7b6a7173627b66737e3c7e6676">[email&#160;protected]</span></a></div>
       </div>
     </div>
     <div class="contact-cta reveal">
       <p>For institutional access or platform inquiries, reach out to our partnerships team directly.</p>
-      <a href="mailto:partnerships@phoenixcapital.ltd">Request Access</a>
+      <a href="/cdn-cgi/l/email-protection#6919081b1d070c1b1a0100191a291901060c0700110a0819001d080547051d0d">Request Access</a>
     </div>
   </div>
 </div>
@@ -663,19 +663,5 @@
   <p>© 2025 Phoenix Capital. Maadi, Cairo, Egypt. All rights reserved.</p>
 </footer>
 
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(r => observer.observe(r));
-</script>
-
-</body>
-</html>
+<script data-cfasync
 

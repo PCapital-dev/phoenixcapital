@@ -406,6 +406,16 @@
     text-transform: uppercase;
   }
 
+  .footer-privacy {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.73rem;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+  }
+
+  .footer-privacy:hover { color: var(--gold); }
+
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -598,7 +608,7 @@
 
 <footer>
   <div class="footer-logo">Phoenix Capital</div>
-  <p>&#169; 2025 Phoenix Capital. Maadi, Cairo, Egypt. All rights reserved.</p>
+  <p>&#169; 2025 Phoenix Capital. Maadi, Cairo, Egypt. All rights reserved. &nbsp;&middot;&nbsp; <a href="/privacy" class="footer-privacy">Privacy Policy</a></p>
 </footer>
 
 <script>
@@ -613,3 +623,4 @@
 
 </body>
 </html>
+
